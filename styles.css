@@ -6,4 +6,77 @@ body {
   margin: 0;
 }
 
+.top {
+  display: flex;
+  height: 50%;
+  background-color: #003638;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+}
 
+.Bottom {
+  display: flex;
+  height: 50%;
+  background-color: #d8001d;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  flex-flow: row;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbox1 {
+  width: 350px;
+  height: inherit;
+  border-style: solid;
+}
+
+.topbox2 {
+  width: 350px;
+  height: inherit;
+  border-style: solid;
+}
+
+
+.topbox3 {
+  width: 350px;
+  height: inherit;
+  border-style: solid;
+}
+
+.bottombox1 {
+  width: 350px;
+  height: 200px;
+  border-style:solid;
+  margin-left: 250px;
+  text-align: center;
+  margin-right: 50px;
+  
+}
+
+.bottombox2 {
+  width: 350px;
+  height: auto;
+  border-style: solid;
+  text-align: center;
+  margin-bottom: 300px;
+
+}
+
+.bottom_middle {
+  width: 606px;
+  height: 200px;
+  border-style:solid;
+  margin-right: 250px;
+  margin-left: 50px;
+  text-align: center;
+}
