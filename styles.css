@@ -1,124 +1,97 @@
+.main-container {
+
+  background-image:
+    radial-gradient(
+      rgb(208, 255, 0),
+      #067ff0
+    );
+
+}
+
+.logo {
+  width: auto;
+  height: 200px;
+  margin: 3% 10%;
+}
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  margin: auto;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  background-image: linear-gradient(0deg, rgb(42, 245, 152) 0%, rgb(42, 245, 152) 100%); opacity: 0;
 
-  
+header {
+font-family: fantasy;
+text-align: center;
+text-shadow: 0 0 3px #6b1818, 0 0 5px #0000FF;
+display: block;
+height: 50vh;
+text-align: center;
+height: 50vh;
+}
+
+pre {
+display: inline;
+vertical-align: middle;
+line-height: 50vh;
+color: white;
+font-size: 50px;
+font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-  background-color: #08AEEA;
-  background-image: -webkit-linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
-  background-image: -moz-linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
-  background-image: -o-linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
-  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);  
- 
+text-align: center
 }
 
-.top {
-  background-color: #08AEEA;
-  background-image: -webkit-linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
-  background-image: -moz-linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
-  background-image: -o-linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
-  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);  
-  justify-content: space-evenly;
-  align-content: center;
-  text-align: center;
-}
-
-.Bottom {
-  background-color: #08AEEA;
-  background-image: -webkit-linear-gradient(180deg, #08AEEA 0%, #2AF598 100%);
-  background-image: -moz-linear-gradient(180deg, #08AEEA 0%, #2AF598 100%);
-  background-image: -o-linear-gradient(180deg, #08AEEA 0%, #2AF598 100%);
-  background-image: linear-gradient(180deg, #08AEEA 0%, #2AF598 100%);
-  
-  
-  
-}
-
-.welcome {
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(0deg, rgb(42, 245, 152) 0%, rgb(42, 245, 152) 100%); opacity: 0;
-} 
-
-.topbox1 {
-  width: 350px;
-  height: inherit;
-  border-style: solid;
-}
-
-.topbox2 {
-  width: 350px;
-  height: inherit;
-  border-style: solid;
+.bot_container{
+display: flex;
+flex-direction: row;
+align-items: center;
+align-content: center;
+flex-wrap: wrap;
+justify-content: space-around;
 }
 
 
-.topbox3 {
-  width: 350px;
-  height: inherit;
-  border-style: solid;
+.title-1 {
+justify-items: center;
+border-top: 2rem solid #0cc90cf3;
+width: 200px;
+height:250px;
+border-radius: 20px;
+background-color: rgba(0, 0, 0, 0.275);
 }
-
-.bottombox1 {
-  width: 400px;
-  height: 200px;
-  border-style:solid;
-  text-align: center;
-  
+.title-2 {
+justify-content: center;
+border-top: 2rem solid #0cc90cf3;
+width: 200px;
+height:250px;
+border-radius: 20px;
+background-color: rgba(0, 0, 0, 0.275);
 }
-
-.bottombox2 {
-  width: 700px;
-  height: auto;
-  border-style: solid;
-  text-align: center;
-
-}
-
-.bottom_middle {
-  width: 400px;
-  height: 200px;
-  border-style:solid;
-  text-align: center;
-}
-
-@media (min-width: 1980px) {
-  body {
-    grid-template-columns: 3fr;
-    grid-template-areas:
-      "h1  h1  h1"
-      "topbox1 topxbox2  topbox3"
-      "bottombox1  bottombox1  bottombox1"
-      "bottom2 bottom2  bottom2 bottom2  bottom2";
-  }
-  nav ul {
-    display: flex;
-    justify-content: space-evenly;
-  }
+.title-3 {
+justify-content: center;
+border-top: 2rem solid #0cc90cf3;
+width: 200px;
+height:250px;
+border-radius: 20px;
+background-color: rgba(0, 0, 0, 0.275);
 }
 
 
-@media (max-width: 699px) {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "header "
-      "nav"
-      "aside"
-      "main"
-      "footer"
-      "banner";
-  }
-  nav ul {
-    display: flex;
-    justify-content: space-evenly;
-  }
+@media (max-width: 576px) {
+.main-container {
+  background-image:
+    radial-gradient(
+      rgb(208, 255, 0),
+      #067ff0
+    );
+}
+}
+
+@media (max-width: 576px) {
+.bot_container {
+ flex-direction: column;
+ height: fit-content;
 }
